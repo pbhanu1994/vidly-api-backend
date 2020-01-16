@@ -39,8 +39,6 @@ router.post('/', async (req, res) => {
     // Sendint the token in the header, and other properties in normal response
     res
         .header('x-auth-token', token)
-        .header("access-control-expose-headers", "x-auth-token")
-        // .header("access-control-allow-origin", "https://cryptic-reaches-36892.herokuapp.com")
         .send(_.pick(user, ['_id', 'name', 'email']));
 });
 
