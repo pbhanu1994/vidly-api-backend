@@ -1,4 +1,5 @@
 const express = require('express');
+const cors = require('cors');
 // Importing the routes and middlewares
 const auth = require('../routes/auth');
 const users = require('../routes/users');
@@ -12,6 +13,7 @@ const error = require('../middleware/error');
 module.exports = app => {
     // Use the routes and middlewares
     app.use(express.json());
+    app.options('*', cors())
     app.use('/api/auth', auth);
     app.use('/api/users', users);
     app.use('/api/genres', genres);
