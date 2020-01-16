@@ -1,0 +1,5 @@
+{
+    "WARNING": "NODE_ENV value of 'production' did not match any deployment config file names",
+    "jwtPrivateKey": "vidly_jwtPrivateKey",
+    "db": "vidly_db"
+  }
