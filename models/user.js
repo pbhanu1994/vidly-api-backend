@@ -35,7 +35,7 @@ const userSchema = new mongoose.Schema({
 // - (where it will end up many functions in application haniging in many modules)
 userSchema.methods.generateAuthToken = function() {
     // Getting JSON Web Token (JWT) after successful authentication
-    const token = jwt.sign({ _id: this._id, isAdmin: this.isAdmin }, config.get('jwtPrivateKey'));
+    const token = jwt.sign({ _id: this._id, name: this.name, isAdmin: this.isAdmin }, config.get('jwtPrivateKey'));
     return token;
 }
 
