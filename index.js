@@ -3,6 +3,7 @@ const app = express();
 const winston = require('winston');
 // Passing the app to the routes in startup folder
 require('./startup/logging')();
+require('./startup/cors')(app);
 require('./startup/routes')(app);
 require('./startup/db')();
 require('./startup/config')();
