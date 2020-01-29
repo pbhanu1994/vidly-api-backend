@@ -3,7 +3,7 @@ const Joi = require('joi');
 
 // Creating Schema for genre
 const classSchema = new mongoose.Schema({
-    class: {
+    name: {
         type: String,
         minlength: 3,
         maxlength: 50,
@@ -17,7 +17,7 @@ const Class = mongoose.model('Class', classSchema);
 //Validate function
 function validateClass(memberClass){
     const schema = {
-        class: Joi.string().min(3).max(50).required()
+        name: Joi.string().min(3).max(50).required()
     }
     return Joi.validate(memberClass, schema);
 }

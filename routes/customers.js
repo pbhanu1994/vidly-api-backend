@@ -37,7 +37,7 @@ router.post('/', auth, async (req, res) => {
         name: req.body.name,
         class: {
             _id: memberClass._id,
-            class: memberClass.class
+            name: memberClass.name
         },
         phone: req.body.phone
     })
@@ -62,7 +62,7 @@ router.put('/:id', auth, async (req, res) => {
         name: req.body.name,
         class: {
             _id: memberClass._id,
-            class: memberClass.class
+            name: memberClass.name
         },
         phone: req.body.phone
     }, {
