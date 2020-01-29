@@ -1,5 +1,6 @@
 const mongoose = require('mongoose');
 const Joi = require('joi');
+const { classSchema } = require('../models/class');
 
 //Creating a Schema for the customer and compiling - 
     // - the schema to the model
@@ -11,9 +12,9 @@ const Customer = mongoose.model('Customer', new mongoose.Schema({
         maxlength: 50,
         trim: true
     },
-    isGold: {
-        type: Boolean,
-        default: false
+    class: {
+        type: classSchema,
+        required: true
     },
     phone: {
         type: String,
@@ -27,7 +28,7 @@ const Customer = mongoose.model('Customer', new mongoose.Schema({
 function validateCustomer(customer) {
     const schema = {
         name: Joi.string().min(5).max(50).required(),
-        isGold: Joi.boolean(),
+        classId: Joi.objectId().required(),
         phone: Joi.string().min(5).max(50).required()
     }
     return Joi.validate(customer, schema);
