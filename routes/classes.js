@@ -32,7 +32,7 @@ router.post('/', auth, async (req, res) => {
     const { error } = validate(req.body);
     if(error) return res.status(400).send(error.details[0].message);
 
-    let memberClass = new Class({ class: req.body.name });
+    let memberClass = new Class({ name: req.body.name });
     // Saving the new Member Class object by save method
     memberClass = await memberClass.save();
 
@@ -46,7 +46,7 @@ router.put('/:id', auth, async (req, res) => {
     if(error) return res.status(400).send(error.details[0].message);
 
     //checking if the Member Class is existing and updating
-    const memberClass = await Class.findByIdAndUpdate(req.params.id, { class: req.body.name }, { 
+    const memberClass = await Class.findByIdAndUpdate(req.params.id, { name: req.body.name }, { 
         new: true
     });
 
