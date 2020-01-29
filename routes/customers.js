@@ -29,7 +29,7 @@ router.post('/', auth, async (req, res) => {
     if(error) return res.status(400).send(error.details[0].message);
     
     // Getting the Class object
-    const memberClass = Class.findById(req.body.classId);
+    const memberClass = await Class.findById(req.body.classId);
     if(!memberClass) return res.status(404).send('Invalid Member Class..');
 
     // Creating the customer object
@@ -76,7 +76,7 @@ router.put('/:id', auth, async (req, res) => {
 
 router.delete('/:id', async (req, res) => {
     const customer = await Customer.findByIdAndDelete(req.params.id);
-    
+
     if(!customer) return res.status(404).send(`No Customer found with given ID ${req.params.id}`);
 
     res.send(customer);
