@@ -1877,3 +1877,14 @@
 {"level":"info","message":"Connected Successfully to mongodb://localhost/vidly_tests...","timestamp":"2020-01-16T11:54:33.787Z"}
 {"level":"info","message":"Listening on port 3000...","timestamp":"2020-01-16T11:54:33.913Z"}
 {"level":"info","message":"Connected Successfully to mongodb://localhost/vidly_tests...","timestamp":"2020-01-16T11:54:34.045Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2020-01-29T03:14:48.099Z"}
+{"level":"info","message":"Connected Successfully to mongodb://localhost/vidly...","timestamp":"2020-01-29T03:14:48.117Z"}
+{"level":"info","message":"Listening on port 5000...","timestamp":"2020-01-29T03:16:46.855Z"}
+{"level":"info","message":"Connected Successfully to mongodb://localhost/vidly...","timestamp":"2020-01-29T03:16:46.877Z"}
+{"level":"info","message":"Listening on port 3900...","timestamp":"2020-01-29T03:19:24.917Z"}
+{"level":"info","message":"Connected Successfully to mongodb://localhost/vidly...","timestamp":"2020-01-29T03:19:24.937Z"}
+{"level":"info","message":"Listening on port 3900...","timestamp":"2020-01-29T03:21:53.941Z"}
+{"level":"info","message":"Connected Successfully to mongodb://localhost/vidly...","timestamp":"2020-01-29T03:21:53.961Z"}
+{"level":"info","message":"Listening on port 3900...","timestamp":"2020-01-29T04:56:05.071Z"}
+{"level":"info","message":"Connected Successfully to mongodb://localhost/vidly...","timestamp":"2020-01-29T04:56:05.090Z"}
+{"message":"Unexpected string in JSON at position 28","stack":"SyntaxError: Unexpected string in JSON at position 28\n    at JSON.parse (<anonymous>)\n    at parse (/Users/bhanupolisetty/Projects/vidly-api-course/node_modules/body-parser/lib/types/json.js:89:19)\n    at /Users/bhanupolisetty/Projects/vidly-api-course/node_modules/body-parser/lib/read.js:121:18\n    at invokeCallback (/Users/bhanupolisetty/Projects/vidly-api-course/node_modules/raw-body/index.js:224:16)\n    at done (/Users/bhanupolisetty/Projects/vidly-api-course/node_modules/raw-body/index.js:213:7)\n    at IncomingMessage.onEnd (/Users/bhanupolisetty/Projects/vidly-api-course/node_modules/raw-body/index.js:273:7)\n    at IncomingMessage.emit (events.js:215:7)\n    at endReadableNT (_stream_readable.js:1183:12)\n    at processTicksAndRejections (internal/process/task_queues.js:80:21)","expose":true,"statusCode":400,"status":400,"body":"{\n\t\"name\": \"Bhanu Prakash\"\n\t\"email\": \"pbhanu.1994@gmail.com\",\n\t\"password\": \"pbhanu1994\"\n}","type":"entity.parse.failed","level":"error","timestamp":"2020-01-29T05:01:16.023Z"}
