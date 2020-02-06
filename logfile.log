@@ -1900,3 +1900,6 @@
 {"level":"info","message":"Connected Successfully to mongodb://localhost/vidly...","timestamp":"2020-01-29T06:49:54.442Z"}
 {"level":"info","message":"Listening on port 3900...","timestamp":"2020-01-29T07:00:40.053Z"}
 {"level":"info","message":"Connected Successfully to mongodb://localhost/vidly...","timestamp":"2020-01-29T07:00:40.074Z"}
+{"level":"info","message":"Listening on port 3900...","timestamp":"2020-01-29T08:25:01.730Z"}
+{"level":"info","message":"Listening on port 3900...","timestamp":"2020-01-29T08:25:15.792Z"}
+{"level":"info","message":"Connected Successfully to mongodb://localhost/vidly...","timestamp":"2020-01-29T08:25:15.827Z"}
